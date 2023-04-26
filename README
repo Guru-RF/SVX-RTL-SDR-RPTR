@@ -1,0 +1,10 @@
+cat config.txt > /boot/config.txt 
+cat svxlink_gpio_up >  /usr/share/svxlink/scripts/svxlink_gpio_up
+cat svxlink.conf > /etc/svxlink/svxlink.conf
+cat gpio.conf > /etc/svxlink/gpio.conf
+
+systemctl enable svxlink_gpio_setup
+systemctl enable svxlink
+
+reboot
+
